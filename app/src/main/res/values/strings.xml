@@ -2,6 +2,11 @@
     <string name="app_name">Mood Tracker</string>
     <string name="save_button">Save</string>
     <string name="save_and_share">Share</string>
-
+    <string name="productive">Productive</string>
+    <string name="lonely">Lonely</string>
+    <string name="content">Content</string>
+    <string name="angry">Angry</string>
+    <string name="annoyed">Annoyed</string>
+    <string name="excited">Excited</string>
     <string name="note_box">Note:</string>
 </resources>
