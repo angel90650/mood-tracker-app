@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
 import android.util.Log;
-
+import com.jjoe64.graphview.*;
+import com.jjoe64.graphview.series.*;
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -57,9 +58,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        GraphView graph = (GraphView) findViewById(R.id.graph);
+        LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[] {
+                new DataPoint(0, 1),
+                new DataPoint(1, 5),
+                new DataPoint(2, 3),
+                new DataPoint(3, 2),
+                new DataPoint(4, 6)
+        });
+        graph.addSeries(series);
 
     }
+
+
 
     public void log_emote(int emote) {
         //save the emote that was logged
